@@ -3,7 +3,13 @@ buildscript {
 		springBootVersion = '1.5.9.RELEASE'
 	}
 	repositories {
-		mavenCentral()
+		maven {
+//		credentials {
+//			username 'user'
+//			password 'password'
+//		}
+			url "https://mirrors.huaweicloud.com/repository/maven/"
+		}
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -19,7 +25,13 @@ sourceCompatibility = 1.8
 
 
 repositories {
-	mavenCentral()
+	maven {
+//		credentials {
+//			username 'user'
+//			password 'password'
+//		}
+		url "https://mirrors.huaweicloud.com/repository/maven/"
+	}
 }
 
 
